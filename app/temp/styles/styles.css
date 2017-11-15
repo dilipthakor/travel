@@ -578,6 +578,40 @@ a {
     max-width: 976px;
   }
 
+.wrapper--no-padding-until-medium{
+    padding-right: 0;
+    padding-left: 0;
+
+
+  }
+
+@media(min-width: 800px){
+
+.wrapper--no-padding-until-medium{
+      padding-left: 18px;
+      padding-right: 18px
+
+
+  }
+  }
+
+.wrapper--no-padding-until-large{
+    padding-right: 0;
+    padding-left: 0;
+
+
+  }
+
+@media(min-width: 1010px){
+
+.wrapper--no-padding-until-large{
+      padding-left: 18px;
+      padding-right: 18px
+
+
+  }
+  }
+
 .wrapper .wrapper{
     padding-left: 0;
     padding-right: 0;
@@ -609,9 +643,49 @@ a {
 }
   }
 
+.page-section--no-b-padding-until-medium{
+  padding-bottom: 0;
+
+}
+
+@media(min-width: 800px){
+
+.page-section--no-b-padding-until-medium{
+    padding-bottom: 4.5rem
+
+}
+  }
+
+.page-section--no-b-padding-until-large{
+  padding-bottom: 0;
+
+}
+
+@media(min-width: 1010px){
+
+.page-section--no-b-padding-until-large{
+    padding-bottom: 4.5rem
+
+}
+  }
+
 .page-section--blue {
     background-color: #2f5572;
     color: #FFF;
+  }
+
+.page-section--testimonials{
+    background-color: #e0e6ef;
+
+  }
+
+@media(min-width: 1010px){
+
+.page-section--testimonials{
+      background: url('/assets/images/testimonials-bg.jpg')top center no-repeat;
+      background-size: cover
+
+  }
   }
 
 .row::after{
@@ -630,17 +704,9 @@ a {
 
   }
 
-.row--gutters-large{
-    margin-right: -100px;
-  }
-
-.row--gutters-large > div {
+.row--gutters > div {
     padding-right: 65px;
   }
-
-.row__gutters-large > div{
-  padding-right: 100px;
-}
 
 .row__b-margin-unit-medium{
     margin-bottom:1rem;
@@ -661,12 +727,6 @@ a {
 .row__medium-4__medium-4--larger{
   width: 37%;
 }
-
-.row__medium-6{
-  float:left;
-  width:50%;
-}
-
   .row__medium-8{
     float: left;
     width: 66.66%
@@ -765,6 +825,10 @@ a {
       font-weight: 500;
     }
 
+.section-title--blue{
+  color:#2f5572;
+}
+
 .section-title__icon{
     display: block;
     margin-left: auto;
@@ -775,6 +839,8 @@ a {
 @media (min-width: 530px) {
 
 .section-title__icon{
+      position: relative;
+      top:10px;
         margin-right: 0.5rem;
         margin-left: 0;
         display: inline-block
@@ -784,7 +850,7 @@ a {
 .feature-item{
   position: relative;
   padding-left: 94px;
-  padding-bottom: 2.5rem;
+  padding-bottom: .5rem;
 }
 
 .feature-item__icon{
